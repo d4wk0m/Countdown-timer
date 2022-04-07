@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500;700&display=swap");
+:root {
+  --background: #F9F4F5;
+  --primary: #001A23;
+  --secondary: #595B5F;
+  --accent: #A641B8;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: var(--background);
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body .heading {
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  top: 5vw;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+body .heading .main-heading {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 6vw;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+body .heading .secondary-heading {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 5vw;
+  font-weight: 500;
+  color: var(--secondary);
+}
+
+body .container {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=style.css.map */
