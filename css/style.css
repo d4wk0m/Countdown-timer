@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500;700&display=swap");
 :root {
-  --background: #F9F4F5;
+  --background: #0A141F;
   --primary: #001A23;
   --secondary: #595B5F;
   --accent: #A641B8;
@@ -14,6 +14,11 @@
 
 body {
   background-color: var(--background);
+  background-image: url("../assets/pexels-francesco-ungaro-998641.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
   font-family: 'Ubuntu', sans-serif;
 }
 
@@ -24,6 +29,9 @@ body .heading {
   top: 5vw;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  background-color: rgba(155, 155, 155, 0.555);
+  padding: 2vw;
+  border-radius: 2vw;
 }
 
 body .heading .main-heading {
@@ -52,5 +60,183 @@ body .container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+body .background {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  background-color: var(--background);
+  z-index: -2;
+}
+
+body .b9,
+body .b8,
+body .b7,
+body .b6,
+body .b5,
+body .b4,
+body .b3,
+body .b2,
+body .b1 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  width: 75%;
+  aspect-ratio: 1 / 1;
+}
+
+body .b9 {
+  width: 75%;
+}
+
+body .b9 .bg2 {
+  height: 95%;
+  width: 95%;
+  border-radius: 50%;
+  background: radial-gradient(circle, #020024 50%, #020024 68%, rgba(255, 0, 0, 0) 70%);
+}
+
+body .b8 {
+  width: 60%;
+}
+
+body .b8 .bg2 {
+  height: 95%;
+  width: 95%;
+  border-radius: 50%;
+  background: radial-gradient(circle, #020024 50%, #020024 65%, rgba(255, 0, 0, 0) 70%);
+}
+
+body .b7 {
+  width: 45%;
+}
+
+body .b7 .bg2 {
+  height: 95%;
+  width: 95%;
+  border-radius: 50%;
+  background: radial-gradient(circle, #020024 50%, #020024 63%, rgba(255, 0, 0, 0) 70%);
+}
+
+body .b6 {
+  width: 30%;
+}
+
+body .b6 .bg2 {
+  height: 95%;
+  width: 95%;
+  border-radius: 50%;
+  background: radial-gradient(circle, #020024 50%, #020024 60%, rgba(255, 0, 0, 0) 70%);
+}
+
+body .b5 {
+  width: 15%;
+}
+
+body .b5 .bg2 {
+  height: 95%;
+  width: 95%;
+  border-radius: 50%;
+  background: radial-gradient(circle, #020024 50%, #020024 50%, rgba(255, 0, 0, 0) 70%);
+}
+
+.background-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.bg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  border: 0px;
+  z-index: 10;
+}
+
+.bg2 {
+  height: 95%;
+  width: 95%;
+  border-radius: 50%;
+  background: radial-gradient(circle, #020024 50%, #020024 68%, rgba(255, 0, 0, 0) 70%);
+}
+
+.background-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  background: -webkit-gradient(linear, left top, right top, from(#FF8038), color-stop(30.43%, #FF0099), color-stop(68.23%, #00EBEB), to(#DB00FF));
+  background: linear-gradient(90deg, #FF8038 0%, #FF0099 30.43%, #00EBEB 68.23%, #DB00FF 100%);
+  background-size: 600% 600%;
+  border-radius: 50%;
+  animation: AnimateBorder 10s ease infinite;
+  -webkit-animation: AnimateBorder 10s ease infinite;
+  -moz-animation: AnimateBorder 10s ease infinite;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  z-index: -1;
+  -webkit-transform: translate(-2px, -2px);
+          transform: translate(-2px, -2px);
+}
+
+@-webkit-keyframes AnimateBorder {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes AnimateBorder {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
